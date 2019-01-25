@@ -1,0 +1,309 @@
+/* Element Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+    background-color: rgba(231, 227, 227, 0.938);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    padding-top: 15px;
+}
+
+h3 {
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    color: #4a4a4a;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+span {
+    margin: 0 1.25em;
+    /* padding: 0 1.25em; */
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+address a {
+    font-weight: bold;
+}
+
+/* Class Styles */
+
+.name {
+    color: rgb(216, 161, 89);
+}
+
+.main-nav {
+    padding-left: 0;
+}
+
+.main-nav li {
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgba(247, 240, 240, 0.877);
+    margin-bottom: 5px;
+}
+
+.main-nav a:hover {
+    color: rgb(209, 177, 88);
+}
+
+.main-nav a {
+    display: block;
+}
+
+.main-header {
+    padding: 30px 5px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 70%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 100%;
+    padding-bottom: 1.50em;
+    text-align: center;
+    background-color:  rgb(255, 255, 255);
+}
+
+.skills {
+    width: 90%;
+    vertical-align: top;
+    margin: 10px auto;
+    display: block;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: rgba(223, 213, 213, 0.877);
+    border-radius: 5px;
+}
+
+.main-footer {
+    padding: 20px 5px;
+    text-align: center;
+}
+
+
+.contact {
+    font-style: normal;
+    padding: 1.35em 0;
+}
+
+.bottom-nav {
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+}
+
+.bottom-nav li {
+    padding-top: .8em;
+    padding-bottom: .8em;
+}
+
+.student-name {
+    padding-left: 1.25em;
+    font-weight: bold;
+    float: left;
+}
+
+.to-top {
+    padding-right: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: right;
+}
+
+#skills {
+    padding: 20px;
+}
+
+/* Hidden Mobile Footer Nav Bar */
+
+#footer-home,
+#footer-portfolio,
+#footer-contact,
+#footer-skills {
+    display: none;
+}
+
+/* Float Clearfix */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+.name {
+    display: block;
+}
+
+.main-nav {
+    display: block;
+    text-align: center;
+}
+
+.main-nav li {
+    letter-spacing: .5px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px; 
+    margin-left: -4px;
+    background-color: inherit;
+    display: inline-block;
+}
+
+.main-header {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.profile-img {
+    margin-top: 0;
+    padding-bottom: 15px;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 40%;
+    float: right;
+}
+
+.description {
+    overflow-x: hidden;
+    font-size: 1.20em;
+    padding-left: 15px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.wrapper section{
+    padding-right: .25em;
+    padding-left: .25em;
+    float: left;
+    width: 50%;
+}
+
+.wrapper span {
+    margin-top: 0;
+    font-size: 1em;
+    padding-right: 10px;
+}
+
+.skills {
+    font-size: 1.25em;
+    width: 40%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.to-top {
+    display: none;
+}
+
+#footer-home,
+#footer-portfolio,
+#footer-contact,
+#footer-skills {
+  text-align: right;
+  display: inline-block;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 4px;
+  margin-left: 8px;
+}
+
+.footer-nav {
+    float: right;
+    margin-right: 10px;
+}
+
+.footer-nav li {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+}
+
+@media (min-width: 1024px) {
+
+.name {
+    padding: 20px;
+    float: left;
+    display: block;
+    margin: 0;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+header {
+    padding: 25px;
+} 
+
+.wrapper section {
+    width: 33.3%;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+}
